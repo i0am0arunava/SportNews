@@ -1,0 +1,513 @@
+.hell{
+  background-color: #000000;
+/* Use flex to arrange the children horizontally */
+  height: 100vh; /* Set height to full viewport height */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-shadow {
+  box-shadow: 0 12px 18px -6px rgba(144, 238, 144, 0.3), 0 8px 14px -4px rgba(144, 238, 144, 0.2), 0 4px 10px -2px rgba(144, 238, 144, 0.1);
+}
+.hell::-webkit-scrollbar {
+  width: 1px;
+}
+
+.hell::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
+}
+
+
+.container {
+  margin-top: 330px;
+  width:100%;
+  flex: 1;
+  border: 1px solid #010f18;
+  overflow: hidden;
+  position: relative; /* Add this line */
+}
+.rectangular-box {
+  position: absolute;
+  top: 73px;
+  /* Adjust the top position as needed */
+  right: 0px;
+  /* Adjust the right position as needed */
+  width: 80%;
+  /* Adjust the width as needed */
+  height: 348px;
+  /* Adjust the height as needed */
+  background-color:#010f18;
+  color: rgb(79, 224, 178);
+  padding: 30px;
+  box-sizing: border-box;
+  z-index: 2;
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 41%;
+
+ 
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  /* Enable horizontal scrolling */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+.rectangular-box::-webkit-scrollbar {
+  display: none;
+}
+.scroll-box {
+  height: 100%;
+  overflow-y: auto;
+  width:100%;
+  padding: 10px;
+  padding-bottom: 0px;
+  background-color: #010f18;
+}
+.rect-box {
+  background: linear-gradient(to right, rgba(67, 32, 193, 0.334), rgba(31, 32, 31, 0.537) 90%);
+  padding: 30px;
+  margin-top: 0px;
+  cursor: pointer;
+  margin-right: 20px;
+  height: 100%;
+  border-radius: 5px;
+  position: relative; 
+  /* Add this line to make .match-location relative to .rect-box */
+  /* Add a smooth transition effect */
+  box-shadow: 0 15px 60px -15px rgba(35, 93, 54, 0.5); /* Adjust values accordingly */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.rect-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-box1{
+  background: linear-gradient(to right, rgba(21, 5, 86, 0.995), rgba(31, 32, 31, 0.537) 90%);
+
+  
+  margin-bottom: 10px;
+  height: 200px;
+  border-radius: 15px;
+  
+}
+.sidebar {
+  width: 20%;
+ background-color: #010f18;
+ padding-top:300px;
+padding-left:15px;
+padding-right:15px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 100vh;
+  margin-right: 1px;
+}
+.content-box2{
+  
+  background: linear-gradient(to right, rgba(82, 56, 175, 0.334), rgba(31, 32, 31, 0.537) 90%);
+  
+
+  margin-bottom: 105px;
+  height: 200px;
+  border-radius: 5px;
+
+  
+}
+.content-box2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+  border-radius: 5px; /* Apply border-radius to the image */
+}
+.sport-name {
+ 
+  bottom: 220px; /* Adjust this value to control the distance from the bottom */
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+
+.content-box3 {
+  position: absolute;
+  background: linear-gradient(to right, #1d1d1d, #11052e, #1d1d1d);
+  padding: 10px;
+  top: 72px;
+  left: 10px; /* Adjust the top position within the .hell container */
+  height: 280px;
+  width: 290px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column; /* Place items in a column */
+  align-items: flex-end;
+  justify-content:flex-end /* Align content to the right */
+  /* Set text color to white or your desired color */
+}
+
+.content-box3 select {
+width:268px;
+  margin-bottom: 10px; /* Add spacing between the two select elements */
+  outline: none;
+  border-color: #75f0f0;
+  background-color: #596065;
+  color: #000000;
+}
+
+.label {
+  color: #ffffff; /* Set the label color */
+  font-size: 16px; /* Adjust the font size */
+  margin-bottom: 80px;
+  margin-right:50px /* Add spacing between label and selects */
+}
+
+.content-box3 option {
+  background-color: #4d5458;
+  color: #000000;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 1px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #101225, #2c2722, #1d1d21, #29252c, #211f22);
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 1px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
+}
+.Navbar{
+  margin-top:5px;
+  background-color: #010f18;
+  padding: 1rem; 
+}
+.nav-link {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #75f0f0; /* Shining green color */
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(31, 32, 31) 90%);
+}
+.square-box {
+  padding:10px;
+  width: 100%;
+  height: 100%;
+  background-color: #888888; /* Use the desired gray color */
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-loading {
+  background: linear-gradient(60deg, #15171b, #333234, #434245);
+  background-size: 200% 100%;
+  animation: loadingAnimation 1.5s infinite;
+}
+
+.content-box1 .text-lg font-bold mb-2 b > span {
+  color: #3498db; /* Set the desired color */
+}
+/* Add this block to your existing CSS for navbar buttons */
+.nav-button {
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  margin-right: 50px;
+  /* Other existing styles... */
+
+  /* Additional hover effect */
+  
+}
+
+
+.rect-box {
+  /* Existing styles... */
+  animation: slideIndividual 15s linear infinite; /* Adjust duration as needed */
+}
+
+
+
+.match-name {
+  font-size: 30px;
+ 
+  margin-bottom: 5px;
+  text-shadow: 10px 10px 20px rgba(35, 32, 32, 0.5); 
+}
+
+.match-description {
+  font-size: 14px;
+  color: #266962;
+  margin-bottom: 5px;
+}
+
+.match-team {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight:1px;
+  padding: 10px; /* Add some padding around the content */
+  max-width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, rgba(82, 56, 175, 0.334), rgba(31, 32, 31, 0.537) 90%);
+  border-radius: 5px;
+}
+
+.match-team > div {
+  margin-bottom: 10px;
+}
+
+.match-location {
+  font-size: 14px;
+  color: #36c7a8;
+  position: absolute;
+  top:220px;
+  /* Adjust the distance from the bottom as needed */
+  
+  left:250px /* Adjust the distance from the right as needed */
+}
+.content-box1g{
+  background-color:rgb(26, 26, 30);
+
+
+  margin-bottom: 10px;
+  height: 200px;
+  border-radius: 15px;
+}
+.square-boxg {
+  padding: 20px; /* Add padding to each side */
+  width: 100%;
+  height: 100%;
+  background-color: #888888;
+}
+
+.rect-boxg{
+ background-color: #282729;
+  padding: 30px;
+  margin-top: 1px;
+  cursor: pointer;
+  margin-right: 20px;
+  height: 100%;
+  border-radius: 5px;
+  position: relative; 
+}
+.match-live {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+ /* Add background color or other styling as needed */
+  color: #00ff80; /* Text color */
+  padding: 5px; /* Adjust padding as needed */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+.logo{
+  position: absolute;
+ top:20px;
+  margin-left:335px;
+}
+.downbox{
+  background: linear-gradient(to right, rgba(82, 56, 175, 0.334), rgba(31, 32, 31, 0.537) 90%);
+}
+/* styles.css */
+
+.prefbut {
+
+  color: #e4e9ee; /* Change text color on hover */
+  background-color: linear-gradient(90deg, #f0e7e6 50%, rgba(196, 36, 36, 0.878) 50%); /* Use a linear gradient for a mix of dark blue and white on hover */
+  font-weight: thin; /* Set the font weight to thin */
+}
+
+.prefbut:hover {
+  border-color: green; /* Change border color on hover */
+  color: #003366; /* Change text color on hover */
+  background-color: linear-gradient(90deg, #003366 50%, rgba(255, 255, 255, 0.1) 50%); /* Use a linear gradient for a mix of dark blue and white on hover */
+}
+
+.seting{
+color:#0981a2;
+}
+.sec{
+  color:#14a5d1;
+}
+.diag{
+  color:#1911ae;
+}
+.backside{
+  background: rgb(6, 6, 61);
+  color:#00ff80
+}
+.contentread{
+  color:#14a5d1
+}
+.sumpara{
+  color:rgb(177, 214, 185)
+}
+.read-more-button {
+  position: absolute;
+  padding:10px;
+  width:100px;
+  height:40px;
+  bottom: 10px; 
+  right: 10px; 
+  border-radius: 5px;
+  color: #b8a1cd;
+  background:linear-gradient(to right, rgba(67, 32, 193, 0.334), rgba(31, 32, 31, 0.537) 90%);
+
+
+}
+.read-more{
+  margin-left: 50px;
+}
+.refresh {
+  position: absolute;
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  text-align: center;
+  line-height: 30px; /* Match the height for vertical centering */
+  font-size: 24px; 
+right: 97px;
+  top:15px;
+  color:white;
+}
+.refresh.rotate {
+  
+  transform: rotate(360deg); /* Rotate the element 360 degrees on click */
+}
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #9e938c; /* Adjust the color as needed */
+}
+
+.score span {
+  margin-right: 50px; /* Add some spacing between team name and score */
+}
+.team{
+  color:#000000
+}
+/* Add this CSS to your stylesheet */
+.refresh {
+  transition: transform 1s ease; /* Adjust the duration as needed */
+}
+
+.rotateAnimation {
+  animation: rotateAnimation 1s forwards; /* Adjust the duration as needed */
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.refbut{
+  position: absolute;
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  text-align: center;
+  line-height: 30px; /* Match the height for vertical centering */
+  font-size: 24px; 
+right: 97px;
+  top:15px;
+  color:white;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.voice {
+  display: flex;
+  gap: 100px;
+
+  position: fixed;
+  top: 180px;
+  right: 50px; /* Adjust the initial position to be outside the screen */
+  z-index: 1000;
+  font-size: 50px;
+  color: #0095ff;
+  animation: slideIn 1s forwards; /* Adjust the animation duration as needed */
+}
+.read-moree-button{
+  position: absolute;
+  padding:10px;
+
+
+
+  color: #030005;
+font-size: 20px;
+}
+.readm{
+  bottom: 220px; /* Adjust this value to control the distance from the bottom */
+  left: 10px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 28px; 
+}
